@@ -58,3 +58,36 @@ console.log(x)
 x = y * z
 console.log(x)
 
+//? Iteracion #4: Arrays
+
+// 1.1
+const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+
+console.log(avengers[0])
+
+// 1.2
+avengers[0] = "IRONMAN"
+console.log(avengers)
+
+// 1.3
+console.log(avengers.length)
+
+// 1.4
+const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
+
+rickAndMortyCharacters.push("Morty", "Summer")
+let lastCharacter = rickAndMortyCharacters.length - 1
+console.log(rickAndMortyCharacters[lastCharacter])
+
+// 1.5
+rickAndMortyCharacters.push("Lapiz Lopez")
+
+rickAndMortyCharacters.pop()
+let newLastCharacter = rickAndMortyCharacters.length - 1
+console.log(newLastCharacter)
+console.log('Primer elemento: ' + rickAndMortyCharacters[0], 'Ultimo elemento: ' + rickAndMortyCharacters[newLastCharacter])
+
+// 1.6
+rickAndMortyCharacters.push("Lapiz Lopez")
+rickAndMortyCharacters.splice(1 , 1)
+console.log(rickAndMortyCharacters)
